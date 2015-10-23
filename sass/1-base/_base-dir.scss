@@ -1,0 +1,10 @@
+// Bootstrap Row Fix
+$dark-green: #4c7456;
+$dark-grey: #222;
+body {
+	@include responsive(font-size, 18px, 16px, 14px);
+}
+.row {
+	margin: 0;
+	padding: 0;
+}

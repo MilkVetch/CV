@@ -1,0 +1,302 @@
+body {
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 64em) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  body {
+    font-size: 14px;
+  }
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+header .logo {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 64em) {
+  header .logo {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  header .logo {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 64em) {
+  header .logo {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  header .logo {
+    margin-bottom: 10px;
+  }
+}
+
+header .logo img {
+  display: block;
+  margin: 0 auto;
+}
+
+header nav {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+header nav ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  header nav ul li {
+    display: inline-block;
+  }
+  header nav ul li:not(:first-child):before {
+    content: '|';
+    padding: 0 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header nav ul li {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    position: relative;
+  }
+  header nav ul li:before {
+    content: '';
+  }
+  header nav ul li:after {
+    content: '';
+  }
+  header nav ul li:hover:before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+    background-color: #4c7456;
+    position: absolute;
+    left: 0;
+    top: 2px;
+  }
+  header nav ul li:hover:after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+    background-color: #4c7456;
+    position: absolute;
+    right: 0;
+    top: 2px;
+  }
+}
+
+header nav ul li a {
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+header nav ul li a:link {
+  text-decoration: none;
+}
+
+header nav ul li a:active {
+  text-decoration: none;
+  color: white;
+}
+
+header nav ul li a:visited {
+  text-decoration: none;
+  color: #4c7456;
+}
+
+@media screen and (min-width: 480px) {
+  header nav ul li a {
+    font-size: 18px;
+    padding: 5px 10px;
+    color: #4c7456;
+  }
+  header nav ul li a:hover {
+    background-color: #4c7456;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header nav ul li a {
+    display: block;
+    font-size: 16px;
+    color: #4c7456;
+  }
+  header nav ul li a:hover {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.welcome {
+  display: inline-block;
+  height: 650px;
+  width: 100%;
+  background: url(../img/bg.jpg) center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media only screen and (max-width: 64em) {
+  .welcome {
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .welcome {
+    height: 250px;
+  }
+}
+
+.welcome h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  font-size: 60px;
+  margin-top: 250px;
+}
+
+@media only screen and (max-width: 64em) {
+  .welcome h1 {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .welcome h1 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 64em) {
+  .welcome h1 {
+    margin-top: 175px;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .welcome h1 {
+    margin-top: 100px;
+  }
+}
+
+.welcome p {
+  color: white;
+  font-size: 40px;
+  font-family: 'Dancing Script', cursive;
+}
+
+@media only screen and (max-width: 64em) {
+  .welcome p {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .welcome p {
+    font-size: 16px;
+  }
+}
+
+.main-title {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 64em) {
+  .main-title {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .main-title {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 64em) {
+  .main-title {
+    margin-bottom: 12.5px;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .main-title {
+    margin-bottom: 10px;
+  }
+}
+
+.about, .portfolio, .contact {
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 64em) {
+  .about, .portfolio, .contact {
+    margin-top: 75px;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .about, .portfolio, .contact {
+    margin-top: 50px;
+  }
+}
+
+.about img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 64em) {
+  .about img {
+    margin-bottom: 12.5px;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .about img {
+    margin-bottom: 10px;
+  }
+}
+
+#owl-demo .item {
+  margin: 3px;
+}
+
+#owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

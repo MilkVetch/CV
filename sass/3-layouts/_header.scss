@@ -1,0 +1,97 @@
+header {
+	.logo {
+		@include responsive(margin-top, 60px, 40px, 20px);
+		@include responsive(margin-bottom, 30px, 20px, 10px);
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	nav {
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+		ul {
+			padding: 0;
+			list-style: none;
+			text-align: center;
+			li {
+				@include bp(min,480px) {
+					display: inline-block;
+					&:not(:first-child):before {
+						content: '|';
+						padding: 0 5px;
+					}					
+				}
+				
+				@include bp(max,480px) {
+					display: block;
+					margin: 0 auto;
+					width: 200px;
+					position: relative;
+					&:before {
+						content: '';
+					}
+					&:after {
+						content: '';
+					}
+					&:hover {
+						&:before {
+							content: '';
+							display: inline-block;
+							width: 8px;
+							height: 16px;
+							background-color: $dark-green;
+							position: absolute;
+							left: 0;
+							top: 2px;
+						}
+						&:after {
+							content: '';
+							display: inline-block;
+							width: 8px;
+							height: 16px;
+							background-color: $dark-green;
+							position: absolute;
+							right: 0;
+							top: 2px;
+						}
+					}
+				}
+				a {
+					&:link {
+						text-decoration: none;
+					}
+					&:active {
+						text-decoration: none;
+						color: white;
+					}
+					&:visited {
+						text-decoration: none;
+						color: $dark-green;
+					}
+					@include juice-prefixer(transition, all 0.6s ease-in-out, webkit moz ms o spec);
+					@include bp(min,480px) {
+						font-size: 18px;
+						padding: 5px 10px;
+						color: $dark-green;
+						&:hover {
+							background-color: $dark-green;
+							color: white;
+							text-decoration: none;
+						}
+					}
+					@include bp(max,480px) {
+						display: block;
+						font-size: 16px;
+						color: $dark-green;
+						&:hover {
+							color: black;
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,67 @@
+main
+  section.welcome
+    h1.text-center Design Your World
+    p.text-center One pixel at a time
+
+  section.about
+    .container
+      .row
+        .col-md-12
+          .main-title.text-center About Us
+      .row
+        .col-md-6
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada vestibulum lectus luctus lacinia. Duis efficitur eget sapien at scelerisque. Phasellus lacus dui, cursus in ex et, commodo euismod dui. Nullam nec ultrices justo, sed porttitor justo. Donec et lacus vitae erat dignissim bibendum ac nec neque. Sed vitae dictum turpis, id accumsan elit.
+        .col-md-6
+          .row
+            .col-xs-6.col-sm-4
+              img.img-responsive(src="img/staff1.jpg", alt="")
+            .col-xs-6.col-sm-4
+              img.img-responsive(src="img/staff2.jpg", alt="")
+            .col-xs-6.col-sm-4
+              img.img-responsive(src="img/staff3.jpg", alt="")
+            .col-xs-6.col-sm-4
+              img.img-responsive(src="img/staff4.jpg", alt="")
+            .col-xs-6.col-sm-4
+              img.img-responsive(src="img/staff5.jpg", alt="")
+            .col-xs-6.col-sm-4
+              img.img-responsive(src="img/staff6.jpg", alt="")
+
+  section.portfolio
+    .container
+      .row
+        .col-md-12
+          .main-title.text-center Portfolio
+      .row
+        #owl-demo
+          .item
+            img(src="img/portfolio1.jpg", alt="")
+          .item
+            img(src="img/portfolio2.jpg", alt="")
+          .item
+            img(src="img/portfolio3.jpg", alt="")
+          .item
+            img(src="img/portfolio4.jpg", alt="")
+
+  section.contact
+    .container
+      .row
+        .col-md-6
+          iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3187.2678130479135!2d174.8802708150398!3d-36.97954009453996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d4db6b66b6925%3A0x9b9029f3c14cd880!2s40+Preston+Rd%2C+Clover+Park%2C+Auckland+2023!5e0!3m2!1szh-CN!2snz!4v1445418815233" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen)
+        .col-md-6
+          .main-title.text-center Contact Us
+          form(role="form")
+            .form-group
+              //- label(for="exampleInputEmail1")
+              //-   | Email address
+              input(value="Email address" type="email" class="form-control" id="exampleInputEmail1")
+            .form-group
+              //- label
+              //-   | Subject of your message
+              input(value="Subject of your message" type="text" class="form-control") 
+            .form-group
+              //- label
+              //-   | Your message goes here...
+              textarea(value="Your message goes here..." class="form-control" rows="3")
+            button(type="submit" class="btn btn-default")
+              | Submit     

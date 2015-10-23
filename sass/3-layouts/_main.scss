@@ -1,0 +1,47 @@
+// welcome
+	.welcome {
+		display: inline-block;
+		@include responsive(height, 650px, 450px, 250px);
+		width: 100%;
+		background: url(../img/bg.jpg) center center;
+		background-size: cover;
+		background-attachment: fixed;
+		h1 {
+			font-weight: bold;
+			text-transform: uppercase;
+			color: white;
+			@include responsive(font-size, 60px, 45px, 25px);
+			@include responsive(margin-top, 250px, 175px, 100px);
+		}
+		p {
+			color: white;
+			@include responsive(font-size, 40px, 30px, 16px);
+			font-family: 'Dancing Script', cursive;
+		}
+	}
+// basic
+.main-title {
+	@include responsive(font-size, 30px, 25px, 20px);
+	@include responsive(margin-bottom, 15px, 12.5px, 10px);
+}
+.about,.portfolio,.contact {
+	@include responsive(margin-top, 100px, 75px, 50px); 
+}
+// about
+.about {
+	img {
+		display: block;
+		margin: 0 auto;
+		@include responsive(margin-bottom, 15px, 12.5px, 10px);
+	}
+}
+// portfolio
+	#owl-demo .item{
+	  margin: 3px;
+	}
+	#owl-demo .item img{
+	  display: block;
+	  width: 100%;
+	  height: auto;
+	}
+// contact
