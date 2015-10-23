@@ -5,6 +5,7 @@
 		width: 100%;
 		background: url(../img/bg.jpg) center center;
 		background-size: cover;
+		background-attachment: scroll;
 		@include bp(large-only) {
 			background-attachment: fixed;			
 		}
