@@ -161,9 +161,22 @@ header nav ul li a:visited {
   display: inline-block;
   height: 650px;
   width: 100%;
-  background: url(../img/bg.jpg) center center;
+  position: relative;
+/*  background: url(../img/bg.jpg) center center;
   background-size: cover;
+  background-attachment: fixed;*/
+}
+.welcome:before {
+  content: ' ';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../img/bg.jpg) center center no-repeat;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 @media only screen and (max-width: 64em) {
