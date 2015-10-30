@@ -7,3 +7,8 @@
 		itemsDesktop : [1199,3],
 		itemsDesktopSmall : [979,3]
 	});
+
+// scroll
+	$('.bg-holder').parallaxScroll({
+		friction: 0.5
+	});
